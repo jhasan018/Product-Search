@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: rgb(202, 192, 192);
+    width: 350px;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 30px rgba(248, 241, 241, 0.384);
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.container form{
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 4px 4px;
+    box-shadow: 2px 2px 15px rgba(248, 241, 241, 0.384);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    background-size: cover;
+}
+
+.container form input{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+
+.container form i{
+    padding-left: 10px;
+}
+.product-list{
+    padding: 10px 0;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 5px 0;
+    
+}
+
+.product img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.details{
+    padding-left: 15px;
+}
+
+.details h3{
+    font-size: 18px;
+}
+
+.details h4{
+    font-size: 16px;
+    padding-top: 5px;
+}
